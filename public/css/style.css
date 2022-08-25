@@ -1,9 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --linkPink: rgb(216, 29, 216);
+    --linkPurple: rgb(98, 16, 250);
 }
-body{
-    background-color: aliceblue;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-rows: 50px 1fr;
+}
+
+a {
+    color: #ffffff;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: var(--linkPink);
+}
+
+a:hover {
+    color: var(--linkPink);
+}
+
+a:hover::before {
+    background: linear-gradient(to right, var(--linkPink) 40%, var(--linkPurple) 75%);
+}
+
+nav {
+    font-size: 1.5rem;
+    background-color: black;
+}
+a {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 10px;
+    margin:10px;
 }
