@@ -60,15 +60,18 @@ ul {
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 30vh;
+}
+main h1{
+    text-align: center;
 }
 
-.auth{
-    display: flex;
-    justify-content: center;
-}
 button{
     padding: 10px;
     margin:10px;
 }
 
+form{
+    
+    display: grid;
+}
