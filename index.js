@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 
 const booksRoute = require('./routes/books');
 const authorRoute = require('./routes/authors');
+const userRoute = require('./routes/users');
 
 const port = 8000;
 const app = express();
@@ -13,7 +14,8 @@ app.use(bodyParser.json())
 //setting express to use the database
 
 app.use('/books', booksRoute);
-app.use('/authors', authorRoute)
+app.use('/authors', authorRoute);
+app.use('/users', userRoute)
 
 
 
